@@ -1,0 +1,604 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 327, 220
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "浙江海洋大学教学助手"
+FONT 12, "幼圆", 0, 0, 0x1
+BEGIN
+    CONTROL         121,IDC_STATIC,"Static",SS_BITMAP,0,0,327,220
+    EDITTEXT        IDC_LOGINUSERNAME,231,78,63,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_LOGINPASSWORD,231,99,63,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "登 录",IDC_LOGIN,213,122,50,14
+    CTEXT           "`",IDC_LOGININFORMTION,259,205,68,15,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    CTEXT           "密  码",IDC_PASSWORD,197,99,28,14,SS_CENTERIMAGE
+    CTEXT           "用户名",IDC_USRENAME,196,79,27,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,327,220
+END
+
+IDD_MAINVIEW DIALOG DISCARDABLE  0, 0, 361, 172
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "浙江海洋大学教学助手"
+MENU IDR_MENU1
+FONT 12, "幼圆"
+BEGIN
+    CONTROL         124,IDC_STATIC,"Static",SS_BITMAP,1,1,360,170
+    PUSHBUTTON      "结  果",IDC_BUTTON_RESULT,220,69,61,37
+    PUSHBUTTON      "点  名",IDC_BUTTON_DIANMING,74,69,61,37
+    CTEXT           "课程选择",IDC_STATIC,44,44,39,15,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOCOURSE,84,46,46,65,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CAPTCHA DIALOG DISCARDABLE  0, 0, 68, 40
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "验证码"
+FONT 72, "微软雅黑"
+BEGIN
+    CONTROL         127,IDC_STATIC,"Static",SS_BITMAP,0,0,68,40
+    CTEXT           "",IDC_CAPTCHA,24,15,20,8,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,71,41
+END
+
+IDD_RESULT DIALOG DISCARDABLE  0, 0, 117, 116
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "到课情况"
+FONT 15, "幼圆"
+BEGIN
+    CONTROL         128,IDC_STATIC,"Static",SS_BITMAP,0,0,116,116
+    EDITTEXT        IDC_EDIT_RESULT,0,61,116,55,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | 
+                    WS_VSCROLL
+    CTEXT           "100",IDC_STATIC_ActualToNumber,68,22,20,10,
+                    SS_CENTERIMAGE
+    CTEXT           "148",IDC_STATIC_ActualTotalNumber,68,2,27,14,
+                    SS_CENTERIMAGE
+    CTEXT           "100",IDC_STATIC_NotTotheNumberOf,68,33,20,10,
+                    SS_CENTERIMAGE
+END
+
+IDD_IMPORT DIALOGEX 0, 0, 208, 129
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入课程"
+FONT 12, "幼圆", 0, 0, 0x1
+BEGIN
+    CONTROL         125,IDC_STATIC,"Static",SS_BITMAP,1,1,207,128
+    CTEXT           "课程名称",IDC_STATIC,53,24,51,12,SS_CENTERIMAGE
+    CTEXT           "课程代码",IDC_STATIC,53,40,51,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLASSNAME,104,22,59,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CLASSID,104,40,59,13,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "选择文件",IDC_STATIC,48,60,44,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FILENAME,91,62,65,12,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC_BUTTON_IMPORTFILE,160,62,20,12
+    CTEXT           "进度",IDC_STATIC,55,82,32,14,SS_CENTERIMAGE
+    CONTROL         "Progress1",IDC_PROGRESSIMPORT,"msctls_progress32",
+                    WS_BORDER,90,84,65,11
+    PUSHBUTTON      "导入",IDC_BUTTON_IMPORT,66,107,67,18
+END
+
+IDD_ADDID DIALOG DISCARDABLE  0, 0, 204, 106
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加学号"
+FONT 12, "幼圆"
+BEGIN
+    CONTROL         126,IDC_STATIC,"Static",SS_BITMAP,1,1,205,106
+    CTEXT           "课程名称",IDC_STATIC,48,28,55,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOADD,101,28,49,47,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "添加学号",IDC_STATIC,56,47,39,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ADDSTUDENTID,101,48,46,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添   加",IDC_BUTTON_ADD,64,70,72,22
+END
+
+IDD_DELETEID DIALOG DISCARDABLE  0, 0, 204, 106
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除学号"
+FONT 12, "幼圆"
+BEGIN
+    CONTROL         126,IDC_STATIC,"Static",SS_BITMAP,1,1,205,106
+    CTEXT           "课程名称",IDC_STATIC,48,28,55,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBODELETE,101,28,49,47,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "删除学号",IDC_STATIC,56,47,39,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DELETESTUDENTID,101,48,46,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "删   除",IDC_BUTTON_DELETE,64,69,72,22
+END
+
+IDD_DELETE DIALOG DISCARDABLE  0, 0, 204, 106
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除课程"
+FONT 12, "幼圆"
+BEGIN
+    CONTROL         126,IDC_STATIC,"Static",SS_BITMAP,1,1,205,106
+    CTEXT           "课程名称",IDC_STATIC,58,28,45,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_DEL,101,28,49,47,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删    除",IDC_BUTTON_DEL,64,69,72,22
+END
+
+IDD_KNOWLEDGEPOINT DIALOGEX 0, 0, 187, 148
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "知识要点"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,1,210,128
+    CTEXT           "课程选择",IDC_STATIC,14,8,36,13,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOKNOWLEDGEPOINT,51,9,47,78,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确 定",IDC_BUTTONKNOWLEDGEPOINT,117,6,34,15
+    EDITTEXT        IDC_EDITKNOWLEDGEPOINT,1,23,186,125,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_HOMEWORK DIALOGEX 0, 0, 187, 176
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "课后习题"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,1,210,128
+    CTEXT           "课程选择",IDC_STATIC,14,8,36,13,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOHOME,51,9,47,69,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确 定",IDC_BUTTONHOME,117,6,34,15
+    EDITTEXT        IDC_EDITHOMEWORK,0,23,186,153,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL,
+                    WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+END
+
+IDD_CHANGEPASSWORD DIALOG DISCARDABLE  0, 0, 170, 97
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更改密码"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定更改",ID_OKPASSWORD,54,77,50,14
+    CTEXT           "原始密码",IDC_STATIC,33,13,32,14,SS_CENTERIMAGE
+    CTEXT           "新密码",IDC_STATIC,33,29,32,14,SS_CENTERIMAGE
+    CTEXT           "再次输入新密码",IDC_STATIC,5,46,60,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDITOLD,71,13,53,12,ES_PASSWORD | ES_NUMBER
+    EDITTEXT        IDC_EDITNEW,71,30,53,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDITNEWAGAIN,71,46,53,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_PERSONINFORMATION DIALOG DISCARDABLE  0, 0, 187, 115
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "个人信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_OKPERSON,64,94,50,14
+    CTEXT           "姓名",IDC_STATIC,36,19,33,13,SS_CENTERIMAGE
+    CTEXT           "手机号",IDC_STATIC,30,33,41,13,SS_CENTERIMAGE
+    CTEXT           "微信号",IDC_STATIC,35,48,33,13,SS_CENTERIMAGE
+    CTEXT           "QQ号",IDC_STATIC,35,66,33,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDITNAME,69,18,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPHONE,69,34,58,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDITWECHAT,69,50,57,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITQQ,69,66,57,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 187, 133
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 浙江海洋大学教学助手"
+FONT 10, "System"
+BEGIN
+    CTEXT           "程序名称：浙江海洋大学教学助手",IDC_STATIC,7,14,123,13,
+                    SS_CENTERIMAGE
+    LTEXT           "程序版本：2.0",IDC_STATIC,7,33,123,13,SS_CENTERIMAGE
+    LTEXT           "程序说明：帮助教学，提高学生学习兴趣",IDC_STATIC,7,52,
+                    155,13,SS_CENTERIMAGE
+    LTEXT           "作者：haiziyan（A13土木1班王宁）",IDC_STATIC,7,73,155,
+                    13,SS_CENTERIMAGE
+    LTEXT           "主页：http://waywant.com",IDC_STATIC,7,92,155,13,
+                    SS_CENTERIMAGE
+    LTEXT           "联系邮件：haiziyan@yahoo.com",IDC_STATIC,7,113,155,13,
+                    SS_CENTERIMAGE
+END
+
+IDD_IMPORTSCORE DIALOGEX 0, 0, 208, 129
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入成绩"
+FONT 12, "幼圆", 0, 0, 0x1
+BEGIN
+    CONTROL         125,-1,"Static",SS_BITMAP,1,1,20,20
+    CTEXT           "选择文件",-1,49,26,44,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FILENAME,91,28,65,12,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC_BUTTON_IMPORTFILE,162,27,20,12
+    CTEXT           "进度",-1,57,48,32,14,SS_CENTERIMAGE
+    CONTROL         "Progress1",IDC_PROGRESSIMPORT,"msctls_progress32",
+                    WS_BORDER,91,50,65,11
+    PUSHBUTTON      "导入",IDC_BUTTON_IMPORT,66,78,67,22
+    PUSHBUTTON      "清空原始成绩",IDC_truncate,138,107,57,17
+END
+
+IDD_IMPORTTEACHER DIALOGEX 0, 0, 208, 129
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入教师"
+FONT 12, "幼圆", 0, 0, 0x1
+BEGIN
+    CONTROL         125,-1,"Static",SS_BITMAP,1,1,20,20
+    CTEXT           "选择文件",-1,49,26,44,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FILENAME,91,28,65,12,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC_BUTTON_IMPORTFILE,162,27,20,12
+    CTEXT           "进度",-1,57,48,32,14,SS_CENTERIMAGE
+    CONTROL         "Progress1",IDC_PROGRESSIMPORT,"msctls_progress32",
+                    WS_BORDER,91,50,65,11
+    PUSHBUTTON      "导入",IDC_BUTTON_IMPORT,66,78,67,22
+END
+
+IDD_ADDURL DIALOGEX 0, 0, 187, 52
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加网址"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CTEXT           "课程选择",-1,14,8,36,13,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOHOME,51,9,47,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确 定",IDC_BUTTONHOME,117,6,34,15
+    EDITTEXT        IDC_EDITHOMEWORK,0,23,187,25,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_AI DIALOG DISCARDABLE  0, 0, 187, 84
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "人工智能回复选择"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "文本",IDC_BUTTON_TEXT,18,27,38,28
+    PUSHBUTTON      "图文",IDC_BUTTON_NEWS,75,27,38,28
+    PUSHBUTTON      "语音",IDC_BUTTON_MUSIC,130,27,38,28
+END
+
+IDD_TEXT DIALOG DISCARDABLE  0, 0, 187, 139
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文本回复"
+FONT 10, "System"
+BEGIN
+    CTEXT           "关键词：",IDC_STATIC,21,13,34,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_KEYWORD,54,15,64,13,ES_AUTOHSCROLL
+    LTEXT           "内容：",IDC_STATIC,22,33,24,12
+    EDITTEXT        IDC_CONTENT,7,45,173,87,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTONTEXT,135,17,38,21
+END
+
+IDD_NEWS DIALOG DISCARDABLE  0, 0, 187, 180
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图文回复"
+FONT 10, "System"
+BEGIN
+    CTEXT           "关键词：",IDC_STATIC,21,13,34,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_KEYWORD,54,15,64,13,ES_AUTOHSCROLL
+    CTEXT           "标    题：",IDC_STATIC,22,33,34,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_TITLE,55,35,64,13,ES_AUTOHSCROLL
+    CTEXT           "图片链接：",IDC_STATIC,15,52,41,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_PICURL,55,54,64,13,ES_AUTOHSCROLL
+    CTEXT           "跳转链接：",IDC_STATIC,16,71,40,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_URL,55,73,64,13,ES_AUTOHSCROLL
+    CTEXT           "描述：",IDC_STATIC,22,93,29,17,SS_CENTERIMAGE
+    EDITTEXT        IDC_DESCRIPTION,7,112,173,61,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "可不填",IDC_STATIC,129,56,42,11
+    LTEXT           "可不填",IDC_STATIC,128,73,42,11
+    PUSHBUTTON      "确定",IDC_BUTTONNEWS,134,17,40,27
+END
+
+IDD_MUSIC DIALOG DISCARDABLE  0, 0, 187, 63
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "语音回复"
+FONT 10, "System"
+BEGIN
+    CTEXT           "关键词：",IDC_STATIC,21,13,34,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_KEYWORD,55,14,64,13,ES_AUTOHSCROLL
+    LTEXT           "语音链接：",IDC_STATIC,15,29,41,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_MUSICURL,55,28,112,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTONMUSIC,131,7,42,20
+END
+
+IDD_IMPORTSTUDENT DIALOGEX 0, 0, 208, 129
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入学生"
+FONT 12, "幼圆", 0, 0, 0x1
+BEGIN
+    CONTROL         125,-1,"Static",SS_BITMAP,1,1,20,20
+    CTEXT           "选择文件",-1,49,26,44,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FILENAME,91,28,65,12,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC_BUTTON_IMPORTFILE,162,27,20,12
+    CTEXT           "进度",-1,57,48,32,14,SS_CENTERIMAGE
+    CONTROL         "Progress1",IDC_PROGRESSIMPORT,"msctls_progress32",
+                    WS_BORDER,91,50,65,11
+    PUSHBUTTON      "导入",IDC_BUTTON_IMPORT,66,78,67,22
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        HORZGUIDE, 199
+    END
+
+    IDD_MAINVIEW, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 171
+        HORZGUIDE, 106
+    END
+
+    IDD_CAPTCHA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 67
+        BOTTOMMARGIN, 39
+        HORZGUIDE, 15
+        HORZGUIDE, 18
+    END
+
+    IDD_IMPORT, DIALOG
+    BEGIN
+        VERTGUIDE, 99
+        HORZGUIDE, 107
+    END
+
+    IDD_ADDID, DIALOG
+    BEGIN
+        HORZGUIDE, 70
+        HORZGUIDE, 81
+    END
+
+    IDD_DELETEID, DIALOG
+    BEGIN
+        HORZGUIDE, 69
+    END
+
+    IDD_DELETE, DIALOG
+    BEGIN
+        HORZGUIDE, 69
+    END
+
+    IDD_KNOWLEDGEPOINT, DIALOG
+    BEGIN
+        HORZGUIDE, 23
+    END
+
+    IDD_HOMEWORK, DIALOG
+    BEGIN
+        HORZGUIDE, 23
+    END
+
+    IDD_CHANGEPASSWORD, DIALOG
+    BEGIN
+        VERTGUIDE, 65
+        VERTGUIDE, 71
+    END
+
+    IDD_PERSONINFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 30
+        VERTGUIDE, 51
+        VERTGUIDE, 69
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_IMPORTSCORE, DIALOG
+    BEGIN
+        VERTGUIDE, 99
+        HORZGUIDE, 107
+    END
+
+    IDD_IMPORTTEACHER, DIALOG
+    BEGIN
+        VERTGUIDE, 99
+        HORZGUIDE, 107
+    END
+
+    IDD_ADDURL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 48
+        HORZGUIDE, 23
+    END
+
+    IDD_AI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+        HORZGUIDE, 27
+    END
+
+    IDD_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_NEWS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 22
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_MUSIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_IMPORTSTUDENT, DIALOG
+    BEGIN
+        VERTGUIDE, 99
+        HORZGUIDE, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "课上"
+    BEGIN
+        POPUP "点名"
+        BEGIN
+            MENUITEM "导入课程",                    ID_MENUITEMIMPORT
+            MENUITEM "删除课程",                    ID_MENUITE_DELETE
+            MENUITEM "添加学号",                    ID_MENUITEMADDID
+            MENUITEM "删除学号",                    ID_MENUITEMDELETEID
+        END
+    END
+    POPUP "课下"
+    BEGIN
+        MENUITEM "知识要点",                    ID_MENUITEMIMPORT_KNOWLEDGEPOINT
+
+        MENUITEM "课后习题",                    ID_MENUITEM_HOMEWORK
+        MENUITEM "微信作业",                    ID_MENUITEMWEIXINWORK
+        MENUITEM "添加网址",                    ID_MENUITEMIMPORT_URL
+    END
+    MENUITEM "人工智能",                    ID_MENUITEMAI
+    POPUP "个人中心"
+    BEGIN
+        MENUITEM "更改密码",                    ID_MENUITEMPASSWORD
+        MENUITEM "个人信息",                    ID_MENUITEMPERSONINFORMATION
+    END
+    POPUP "数据"
+    BEGIN
+        MENUITEM "导入成绩",                    ID_MENUITEMIMPORTSCORE
+        MENUITEM "导入教师",                    ID_MENUITEMIMPORTTEACHER
+        MENUITEM "导入学生",                    ID_MENUITEMIMPORTSTUDENT
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "使用说明",                    ID_MENUITEMHELP
+        MENUITEM "关于",                        ID_MENUITEMABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "0bd162d9f2d3572c1d14bd988d13632763d0c3fb.jpg [原始大小].bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "539ccb9049009.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "01.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "02.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "03.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "04.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "08.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON3               ICON    DISCARDABLE     "icon1.ico"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

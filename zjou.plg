@@ -1,0 +1,163 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Person - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBB5A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PERSON_EXPORTS" /Fp"Release/Person.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"I:\wintest\zjou\Person\Person.cpp"
+]
+Creating command line "cl.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBB5A.tmp"" 
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBB5B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PERSON_EXPORTS" /Fp"Release/Person.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"I:\wintest\zjou\Person\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBB5B.tmp"" 
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBB5C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/Person.pdb" /machine:I386 /out:"Release/Person.dll" /implib:"Release/Person.lib" 
+.\Release\Person.obj
+.\Release\StdAfx.obj
+]
+Creating command line "link.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBB5C.tmp""
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Person.cpp
+Linking...
+   Creating library Release/Person.lib and object Release/Person.exp
+<h3>
+--------------------Configuration: SomeData - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBDDD.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SOMEDATA_EXPORTS" /Fp"Release/SomeData.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"I:\wintest\zjou\SomeData\SomeData.cpp"
+]
+Creating command line "cl.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBDDD.tmp"" 
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBDDE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/SomeData.pdb" /machine:I386 /out:"Release/SomeData.dll" /implib:"Release/SomeData.lib" 
+.\Release\SomeData.obj
+]
+Creating command line "link.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBDDE.tmp""
+<h3>Output Window</h3>
+Compiling...
+SomeData.cpp
+Linking...
+   Creating library Release/SomeData.lib and object Release/SomeData.exp
+<h3>
+--------------------Configuration: zjou - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/resource.res" /d "NDEBUG" "I:\wintest\zjou\resource.rc"" 
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBFB4.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/zjou.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"I:\wintest\zjou\About.cpp"
+"I:\wintest\zjou\AddId.cpp"
+"I:\wintest\zjou\Ai.cpp"
+"I:\wintest\zjou\Ai_music.cpp"
+"I:\wintest\zjou\Ai_news.cpp"
+"I:\wintest\zjou\Ai_text.cpp"
+"I:\wintest\zjou\captcha.cpp"
+"I:\wintest\zjou\Delete.cpp"
+"I:\wintest\zjou\DeleteId.cpp"
+"I:\wintest\zjou\Homework.cpp"
+"I:\wintest\zjou\Import.cpp"
+"I:\wintest\zjou\ImportScore.cpp"
+"I:\wintest\zjou\ImportStudent.cpp"
+"I:\wintest\zjou\ImportTeacher.cpp"
+"I:\wintest\zjou\KnowledgePoint.cpp"
+"I:\wintest\zjou\Main.cpp"
+"I:\wintest\zjou\MainDlg.cpp"
+"I:\wintest\zjou\MainView.cpp"
+"I:\wintest\zjou\Password.cpp"
+"I:\wintest\zjou\Personinformation.cpp"
+"I:\wintest\zjou\result.cpp"
+"I:\wintest\zjou\Url.cpp"
+]
+Creating command line "cl.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBFB4.tmp"" 
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBFB5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/zjou.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"I:\wintest\zjou\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBFB5.tmp"" 
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSPBFB6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/zjou.pdb" /machine:I386 /out:"Release/zjou.exe" 
+.\Release\About.obj
+.\Release\AddId.obj
+.\Release\Ai.obj
+.\Release\Ai_music.obj
+.\Release\Ai_news.obj
+.\Release\Ai_text.obj
+.\Release\captcha.obj
+.\Release\Delete.obj
+.\Release\DeleteId.obj
+.\Release\Homework.obj
+.\Release\Import.obj
+.\Release\ImportScore.obj
+.\Release\ImportStudent.obj
+.\Release\ImportTeacher.obj
+.\Release\KnowledgePoint.obj
+.\Release\Main.obj
+.\Release\MainDlg.obj
+.\Release\MainView.obj
+.\Release\Password.obj
+.\Release\Personinformation.obj
+.\Release\result.obj
+.\Release\StdAfx.obj
+.\Release\Url.obj
+.\Release\resource.res
+.\Person\Release\Person.lib
+.\SomeData\Release\SomeData.lib
+]
+Creating command line "link.exe @"C:\Users\asus-\AppData\Local\Temp\RSPBFB6.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+About.cpp
+AddId.cpp
+Ai.cpp
+Ai_music.cpp
+Ai_news.cpp
+Ai_text.cpp
+captcha.cpp
+Delete.cpp
+DeleteId.cpp
+Homework.cpp
+Import.cpp
+ImportScore.cpp
+ImportStudent.cpp
+ImportTeacher.cpp
+KnowledgePoint.cpp
+Main.cpp
+MainDlg.cpp
+MainView.cpp
+Password.cpp
+Personinformation.cpp
+Generating Code...
+Compiling...
+result.cpp
+Url.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+zjou.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

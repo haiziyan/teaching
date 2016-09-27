@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DataOperate - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSP3DCA.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DATAOPERATE_EXPORTS" /Fp"Release/DataOperate.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"I:\wintest\zjou\DataOperate\DataOperate.cpp"
+]
+Creating command line "cl.exe @"C:\Users\asus-\AppData\Local\Temp\RSP3DCA.tmp"" 
+Creating temporary file "C:\Users\asus-\AppData\Local\Temp\RSP3DCB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/DataOperate.pdb" /machine:I386 /out:"Release/DataOperate.dll" /implib:"Release/DataOperate.lib" 
+.\Release\DataOperate.obj
+.\Release\StdAfx.obj
+]
+Creating command line "link.exe @"C:\Users\asus-\AppData\Local\Temp\RSP3DCB.tmp""
+<h3>Output Window</h3>
+Compiling...
+DataOperate.cpp
+Linking...
+   Creating library Release/DataOperate.lib and object Release/DataOperate.exp
+
+
+
+<h3>Results</h3>
+DataOperate.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
